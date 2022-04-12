@@ -1,0 +1,517 @@
+/* MODIFICACIONES QUE AFECTAN A TODO EL DOCUMENTO */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /*-- asi convertimos 1rem=10px --*/
+}
+
+
+/* clases vamos a intentar hacer un codigo ordenado dividiendo lo mas claro posible*/
+
+
+/* CLASES */
+
+
+/*---------- BARRA DE NAVEGACIÓN ----------*/
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 11rem;
+    position: sticky;
+    top: 0;
+
+}
+
+footer {
+
+    margin-top: 2rem;
+    box-shadow: 0 0 1rem;
+    padding: 3rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+footer h6 a {
+
+    text-decoration: none;
+    color: darkorange;
+    text-shadow: 0 0 1rem;
+}
+
+.menu__logo {
+
+    height: 10rem;
+    width: 10rem;
+    border-radius: 24rem;
+
+}
+
+.menu__derecha {
+
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu__botones {
+
+    z-index: 999;
+
+}
+
+.menu__botones ul li {
+
+    display: inline-block;
+    list-style-type: none;
+    background-color: white;
+    box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 0.5rem;
+
+}
+
+.menu__botones ul li a {
+
+    font-size: 2rem;
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 1s;
+
+
+}
+
+.menu__botones ul li a:hover {
+
+    background-color: darkorange;
+    bottom: pointer;
+
+}
+
+/*--------- FIN DE BARRA DE NAVEGACIÓN ----------*/
+
+
+.imagen {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10rem;
+    width: 700px;
+    height: 500px;
+
+}
+
+.img-flex {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    height: 60rem;
+    width: 80rem;
+
+}
+
+.cajaFestivales {
+
+    margin: 5rem;
+    padding: 2rem;
+
+}
+
+.items__festivales {
+
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+
+
+}
+
+.items__festivales li {
+
+    display: inline-block;
+    margin: 2rem;
+    list-style-type: none;
+
+}
+
+.items__festivales li a {
+
+    display: block;
+    color: black;
+    margin: 1rem;
+    padding: 2rem;
+    text-decoration: none;
+    box-shadow: 0 0 1rem;
+    border-radius: 1rem;
+    transition: 1s;
+
+}
+
+
+.items__festivales li a:hover {
+
+    background-color: darkorange;
+    bottom: pointer;
+
+}
+
+
+
+/*              TITULOS               */
+
+.titulo {
+
+    font-size: 4rem;
+    background-color: transparent;
+    text-align: center;
+    padding: 10rem;
+    border: 0.1rem solid grey;
+    /*border-radius: 4rem;*/
+    height: 10rem;
+    box-shadow: 5rem 0 5rem 0;
+
+}
+
+.titulo__parrafo {
+
+    font-size: 3rem;
+    line-height: 1.6;
+    text-align: center;
+    height: 30rem;
+    padding: 25rem;
+    overflow: hidden;
+
+}
+
+.titulo__2 {
+
+    font-size: 2rem;
+    color: black;
+    background-color: darkcyan;
+    border: 2rem solid orangered;
+    padding: 3rem;
+
+}
+
+.titulo__3 {
+
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+    line-height: 2;
+    background-color: darkcyan;
+    border: 2px solid darkslategray;
+
+}
+
+.tituloh2__costumbres {
+
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+    margin: 10rem;
+    box-shadow: 0 0 2rem 0;
+    border-radius: 1rem;
+
+}
+
+.titulo__parrafo--costumbres {
+
+    font-size: 3rem;
+    line-height: 1.6;
+    text-align: center;
+    height: 30rem;
+    padding: 5rem;
+    overflow: scroll;
+
+}
+
+
+/*                  FIN TITULOS               */
+
+.mapa {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+
+}
+
+.formulario__items {
+
+    margin: 0px auto;
+    font-size: 1rem;
+    background-color: black;
+
+}
+
+
+/* -------ETIQUETAS------- */
+
+
+
+h2, h4, h6 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px ;
+}
+
+
+
+/*---------- ID ----------*/
+
+#formulario {
+
+    text-align: center; 
+
+}
+
+/*---------- PARALLAX ----------*/
+
+
+.parallax {
+    background-image: url(../img/DeX2MLQWsAAlozV.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url(../img/063-Florencia-Ferrero-en-el-Valle-de-Los-Lisos-en-BAJA-1024x682.jpg);
+    min-height: 60rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url(../img/siete-cascadas-la-falda-foto-agencia-cordoba-turismo.jpg);
+    min-height: 60rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 {
+    background-image: url(../img/HZBE4SWEEFFFVDS5VFBHHDRKEE.jpg);
+    min-height: 60rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------- FIN PARALLAX ----------*/
+
+/*---------- GRIDS ----------*/
+
+.grids {
+
+    display: grid;
+    justify-content: stretch;
+    grid-template-columns: 100%;
+    width: auto; 
+    grid-template-rows: 0.2fr 1.5fr 1.5fr 1fr 0.2fr 0.2fr;
+    row-gap: 1rem;
+    margin: 0;
+    grid-template-areas: 
+        "header"
+        "parallax"
+        "section"
+        "video"
+        "formulario"
+        "footer";
+
+}
+
+
+.g1 {
+    grid-area: header;
+}
+
+.parallax {
+    grid-area: parallax;
+}
+
+.g2 {
+    grid-area: section;
+}
+
+section#video {
+    grid-area: video;
+}
+
+.g4 {
+    grid-area: formulario;
+}
+
+.g5 {
+    grid-area: footer;
+}
+
+
+@media   (max-width: 767px) {
+
+
+.grids {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "parallax"
+    "section"
+    "video"
+    "formulario"
+    "footer";
+
+}
+
+.video {
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    height: 50rem;
+    width: 50rem;
+
+}
+
+header {
+    height: 3rem;
+    position:static;
+    top: 0;
+}
+
+.menu__logo {
+    display: none;
+}
+
+.menu__derecha {
+
+    flex-direction: column;
+    width: 90%;
+
+} 
+
+ 
+
+.titulo {
+
+    display: flex;
+    font-size: 3rem;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    padding: 5rem;
+    border: 0.1rem solid grey;
+    width: auto;
+    height: 6rem;
+    box-shadow: 5rem 0 5rem 0;
+    border-radius: 10px;
+
+}
+
+.titulo__parrafo {
+
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    height: 20rem;
+    padding: 10rem;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.tituloh2__costumbres {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    width: 20rem;
+    padding: 5rem;
+    box-shadow: 0 0 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 5rem auto;
+
+}
+
+.imagen {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+
+}
+
+.flex__mapa {
+    display: flex;
+    align-items: center;
+}
+
+.mapa {
+
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5rem;
+    width: 50rem;
+
+}
+
+
+}
+
+
+
+@media   (min-width: 768px) {
+    .grids {
+
+        display: grid;
+        justify-content: stretch;
+        grid-template-columns: 100%;
+        width: auto; 
+        grid-template-rows: 0.2fr 1.5fr 1.5fr 1fr 0.2fr 0.2fr;
+        row-gap: 1rem;
+        margin: 0;
+        grid-template-areas: 
+            "header"
+            "parallax"
+            "section"
+            "video"
+            "formulario"
+            "footer";
+    
+    }
+}
