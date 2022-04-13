@@ -33,7 +33,7 @@ header {
 
 }
 
-@keyframes {
+@keyframes aparecer {
     0% {
         opacity: 0;
     }
