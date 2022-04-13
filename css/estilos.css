@@ -519,9 +519,37 @@ header {
 
 .titulo__github {
 
-    width: 100%;
-    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 3rem;
+    width: 80rem;
+    height: 30rem;
     color: #82d37b;
-    background-image: linear-gradient(to rigth, #0d260c, #640050)
+    background-color: darkgreen;
+    transform: translate(25rem, 3rem);
+    transition: all 1s; 
 
 }
+
+.titulo__github:hover {
+    width: 90rem;
+    height: 20rem;
+} 
+
+.titulo__github {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 3;
+    }
+}
+
