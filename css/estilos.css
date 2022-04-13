@@ -27,8 +27,21 @@ header {
     height: 11rem;
     position: sticky;
     top: 0;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
 
 }
+
+@keyframes {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 footer {
 
@@ -90,8 +103,7 @@ footer h6 a {
     text-decoration: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    transition: 1s;
-
+    transition: all 2s;
 
 }
 
@@ -99,7 +111,8 @@ footer h6 a {
 
     background-color: darkorange;
     bottom: pointer;
-
+    width: 20rem;
+    transform:translate(2rem, 1rem)
 }
 
 /*--------- FIN DE BARRA DE NAVEGACIÓN ----------*/
@@ -165,7 +178,8 @@ footer h6 a {
     text-decoration: none;
     box-shadow: 0 0 1rem;
     border-radius: 1rem;
-    transition: 1s;
+    transition: 2s;
+    
 
 }
 
